@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv
+venv/
+*.db
+data/syllabus.pdf
+data/notes/*.pdf
+data/notes/*.docx
+data/notes/*.txt
+data/question_papers/*.pdf
