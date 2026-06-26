@@ -1,72 +1,80 @@
+<p align="center">
+  <img src="assets/banner.png" alt="VTU Smart Study Agent Banner" width="100%">
+</p>
+
 # 🎓 VTU Smart Study Agent
 
-> **A Multi-Agent AI Study Assistant built using Google Agent Development Kit (ADK).**
+> **A Multi-Agent AI Study Assistant built using Google ADK, Gemini 2.5 Flash, MCP, and PDF-based knowledge retrieval for VTU Engineering students.**
 
-## 📖 Overview
+<p align="center">
 
-VTU Smart Study Agent is an AI-powered assistant that helps engineering students study smarter. It uses a **Multi-Agent Architecture**, where each agent is responsible for a specific task such as explaining concepts, generating quizzes, or creating study plans.
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Google ADK](https://img.shields.io/badge/Google-ADK-red)
+![Gemini](https://img.shields.io/badge/Gemini-2.5_Flash-purple)
+![MCP](https://img.shields.io/badge/MCP-Enabled-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-Built using **Google ADK** and **Gemini 2.5 Flash** as part of the **Google AI Agents Capstone Project**.
+</p>
 
 ---
 
-## ✨ Features
+# 📖 Overview
+
+VTU Smart Study Agent is an intelligent multi-agent learning assistant designed to help engineering students prepare for examinations more efficiently.
+
+The system uses **Google Agent Development Kit (ADK)** to coordinate multiple specialized AI agents that collaborate to answer questions, generate quizzes, and create personalized study plans using VTU syllabus PDFs.
+
+---
+
+# ✨ Features
 
 * 🤖 Multi-Agent Architecture
 * 📚 Study Agent
 * ❓ Quiz Agent
 * 📅 Planner Agent
-* 📄 PDF-based syllabus reading
+* 📄 PDF-based syllabus reader
 * 🔌 MCP Integration
 * ⚡ Gemini 2.5 Flash
-* 🧩 Modular & scalable design
+* 🧩 Modular and scalable architecture
 
 ---
 
-## 🏗️ Architecture
+# 🏗️ Architecture
 
-```text
-                     Student
-                        │
-                        ▼
-                VTU Manager Agent
-                        │
-      ┌─────────────────┼─────────────────┐
-      ▼                 ▼                 ▼
- Study Agent       Quiz Agent      Planner Agent
-      │                 │                 │
-      └─────────────────┼─────────────────┘
-                        ▼
-                  PDF Reader Tool
-                        ▼
-                 VTU Syllabus PDFs
-                        ▼
-                 Gemini 2.5 Flash
-```
+<p align="center">
+  <img src="assets/architecture.png" alt="Architecture Diagram" width="900">
+</p>
 
 ---
 
-## 🤖 Agents
+# 🤖 Agents
 
-### Manager Agent
+## 🧠 Manager Agent
 
-Routes user requests to the appropriate specialized agent.
+* Routes requests to the appropriate specialist agent.
+* Coordinates communication between sub-agents.
 
-### Study Agent
+### 📚 Study Agent
 
-Explains concepts and answers questions using VTU syllabus PDFs.
+* Explains VTU syllabus concepts
+* Answers theory questions
+* Uses syllabus PDFs as its knowledge source
 
-### Quiz Agent
+### ❓ Quiz Agent
 
-Generates multiple-choice questions for revision.
+* Generates MCQs
+* Helps with revision
+* Tests conceptual understanding
 
-### Planner Agent
+### 📅 Planner Agent
 
-Creates personalized study plans based on exam timelines.
+* Creates personalized study schedules
+* Builds revision plans
+* Organizes preparation based on available time
 
 ---
 
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
 * Python 3.10
 * Google Agent Development Kit (ADK)
@@ -77,38 +85,50 @@ Creates personalized study plans based on exam timelines.
 
 ---
 
-## 📁 Project Structure
+# 📂 Project Structure
 
 ```text
 vtu-smart-study-agent/
+│
+├── assets/
+│   ├── banner.png
+│   └── architecture.png
 │
 ├── study_agent/
 │   ├── agent.py
 │   ├── sub_agents/
 │   ├── tools/
 │   ├── mcp/
-│   ├── memory/
 │   └── data/
 │
 ├── tests/
 ├── README.md
 ├── requirements.txt
-└── .env
+├── CONTRIBUTING.md
+└── LICENSE
 ```
 
 ---
 
-## ⚙️ Installation
+# ⚙️ Installation
 
 ```bash
 git clone <repository-url>
+
 cd vtu-smart-study-agent
 
 python -m venv .venv
+```
 
-# Windows
+### Windows
+
+```bash
 .venv\Scripts\activate
+```
 
+Install dependencies:
+
+```bash
 pip install -r requirements.txt
 ```
 
@@ -126,7 +146,7 @@ adk web
 
 ---
 
-## 💬 Example Prompts
+# 💬 Example Prompts
 
 ```text
 Explain supervised learning.
@@ -146,7 +166,13 @@ Explain K-Means, generate 10 MCQs, and create a 3-day revision plan.
 
 ---
 
-## 🎯 Concepts Demonstrated
+# 📸 Demo
+
+Demo screenshots and a walkthrough GIF will be added here.
+
+---
+
+# 🎯 Concepts Demonstrated
 
 * ✅ Multi-Agent Systems
 * ✅ Google ADK
@@ -157,10 +183,10 @@ Explain K-Means, generate 10 MCQs, and create a 3-day revision plan.
 
 ---
 
-## 🚀 Future Improvements
+# 🚀 Future Improvements
 
 * Persistent Memory
-* RAG with Vector Database
+* Vector Database (RAG)
 * Previous Year Question Paper Analysis
 * Voice Assistant
 * Progress Tracking Dashboard
@@ -168,9 +194,9 @@ Explain K-Means, generate 10 MCQs, and create a 3-day revision plan.
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
-**Yesh**
+**Yesh(itsyesh)**
 
 AI & Machine Learning Engineering Student
 

@@ -1,3 +1,10 @@
+"""
+PDF Reader Tool.
+
+Reads all Machine Learning syllabus PDFs and
+provides their content to AI agents.
+"""
+
 from pathlib import Path
 from pypdf import PdfReader
 

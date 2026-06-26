@@ -1,3 +1,10 @@
+"""
+Study Agent.
+
+Responsible for explaining VTU syllabus topics
+using the syllabus PDF reader tool.
+"""
+
 from google.adk.agents import Agent
 from study_agent.tools.pdf_reader import read_syllabus
 

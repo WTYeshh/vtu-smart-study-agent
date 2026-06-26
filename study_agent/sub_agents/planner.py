@@ -1,3 +1,10 @@
+"""
+Planner Agent.
+
+Creates personalized study schedules and revision
+plans based on the student's available time.
+"""
+
 from google.adk.agents import Agent
 from study_agent.tools.pdf_reader import read_syllabus
 

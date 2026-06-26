@@ -1,3 +1,10 @@
+"""
+Quiz Agent.
+
+Generates multiple-choice questions and evaluates
+student knowledge based on the syllabus.
+"""
+
 from google.adk.agents import Agent
 from study_agent.tools.pdf_reader import read_syllabus
 

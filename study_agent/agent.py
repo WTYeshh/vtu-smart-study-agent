@@ -1,3 +1,12 @@
+"""
+Root manager agent for the VTU Smart Study Assistant.
+
+Routes user requests to specialized sub-agents:
+- Study Agent
+- Quiz Agent
+- Planner Agent
+"""
+
 import os
 from dotenv import load_dotenv
 
