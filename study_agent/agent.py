@@ -11,7 +11,13 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-print("Loaded API Key:", os.getenv("GOOGLE_API_KEY")[:15], "...")
+
+api_key = os.getenv("GOOGLE_API_KEY")
+
+if api_key:
+    print("✅ API Key Loaded")
+else:
+    print("❌ GOOGLE_API_KEY not found")
 
 from google.adk.agents import Agent
 

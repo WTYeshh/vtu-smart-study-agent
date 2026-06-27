@@ -15,7 +15,7 @@ def read_syllabus() -> str:
     and returns one combined text.
     """
 
-    syllabus_folder = Path("data/syllabus")
+    syllabus_folder = Path(__file__).parent.parent / "data" / "syllabus"
 
     combined_text = ""
 
