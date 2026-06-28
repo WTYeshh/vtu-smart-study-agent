@@ -24,6 +24,8 @@ VTU Smart Study Agent is an intelligent multi-agent learning assistant designed 
 
 The system uses **Google Agent Development Kit (ADK)** to coordinate multiple specialized AI agents that collaborate to answer questions, generate quizzes, and create personalized study plans using VTU syllabus PDFs.
 
+*The included syllabus PDFs are concise educational materials created for **demonstration purposes.** They are designed to showcase the AI agents' capabilities while keeping inference efficient.*
+
 ---
 
 # ✨ Features
